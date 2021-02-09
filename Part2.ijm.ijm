@@ -1,0 +1,15 @@
+run("ROI Manager...");
+roiManager("Add");
+selectWindow("calcification");
+run("Colour Deconvolution", "vectors=[User values] hide [r1]=158 [g1]=88 [b1]=59 [r2]=0.00000 [g2]=0.00000 [b2]=0.00000 [r3]=0.00000 [g3]=0.00000 [b3]=0.00000");
+selectWindow("calcification-(Colour_3)");
+close();
+selectWindow("calcification-(Colour_1)");
+close();
+selectWindow("calcification-(Colour_2)");
+run("Threshold...");
+setAutoThreshold("Intermodes");
+setOption("BlackBackground", false);
+run("Convert to Mask");
+roiManager("Select", 0);
+run("Analyze Particles...", "size=4-Infinity summarize");
