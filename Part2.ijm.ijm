@@ -13,3 +13,4 @@ setOption("BlackBackground", false);
 run("Convert to Mask");
 roiManager("Select", 0);
 run("Analyze Particles...", "size=4-Infinity summarize");
+close("\\Others");
