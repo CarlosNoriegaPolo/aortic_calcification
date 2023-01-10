@@ -1,4 +1,4 @@
-# ARCQ (Aortic Ring Calcification Cuantification)
+# ARCQ (Aortic Ring Calcification Quantification)
 This tool was created in [Fiji](https://imagej.net/Fiji) _(v 1.53h)_ to quantify the calcification of mouse aortic rings stained with Alizarin Red. It is a semi-automated workflow with two macros (Part1 and Part2) separated by an interactive portion for ROI selection. 
 
 ### **Instructions**
